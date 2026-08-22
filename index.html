@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+
+        .class1{
+            h1 + p{
+                color: red;
+            }
+            border: 2px solid black;
+            background-color: rgb(241, 238, 238);
+        }
+
+        .class2{
+            div p{
+                color: blue;
+            }
+            border: 2px solid black;
+            background-color: rgb(241, 238, 238);
+        }
+
+        .class3{
+            div > h1{
+                color: green;
+            }
+            border: 2px solid black;
+            background-color: rgb(241, 238, 238);
+        }
+
+        .class4{
+            h1 ~ p{
+                color: orange;
+            }
+            border: 2px solid black;
+            background-color: rgb(241, 238, 238);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="class1">
+        <h1>Adjacent Sibling Selector</h1>
+        <p>This is a paragraph tag for adjacent sibling selector.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius?</p>
+    </div>
+    <hr>
+
+    <div class="class2">
+        <h1>Descendant Selector</h1>
+        <p>This is a paragraph tag for descendant selector.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius?</p>
+            <h1>This is a heading tag for descendant selector.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius?</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="class3">
+        <h1>Child Selector</h1>
+        <p>This is a paragraph tag for child selector.</p>
+        <div>
+            <h1>This is a heading tag for child selector.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius?</p>
+            <selector><h1>Hello</h1></selector>
+            <h1>This is a heading tag 2 for child selector.</h1>
+        </div>
+    </div>
+    <hr>
+
+    <div class="class4">
+        <h1>General Sibling Selector</h1>
+        <p>This is a paragraph tag for general sibling selector.</p>
+        <h1>This is a heading tag 2 for general sibling selector.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius?</p>
+    </div>
+</body>
+
+</html>
